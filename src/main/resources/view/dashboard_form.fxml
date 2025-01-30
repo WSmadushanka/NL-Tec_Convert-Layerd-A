@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="763.0" prefWidth="1080.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.nltec.nltecconvertlayerda.controller.DashboardFormController">
+   <children>
+      <AnchorPane layoutX="61.0" layoutY="5.0" prefHeight="170.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="100.0" prefHeight="18.0" prefWidth="153.0" text="Customer Count" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labCutCount" alignment="CENTER" layoutX="44.0" layoutY="149.0" prefHeight="27.0" prefWidth="93.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="84.0" fitWidth="76.0" layoutX="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-customer-80.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="315.0" layoutY="8.0" prefHeight="149.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" layoutX="23.0" layoutY="100.0" prefHeight="18.0" prefWidth="153.0" text="Order Count" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblOrderCount" alignment="CENTER" layoutX="53.0" layoutY="143.0" prefHeight="27.0" prefWidth="93.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="90.0" fitWidth="76.0" layoutX="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-order-80.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <BarChart fx:id="barChart" layoutX="24.0" layoutY="391.0" opacity="0.85" prefHeight="426.0" prefWidth="500.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <AnchorPane layoutX="617.0" layoutY="182.0" prefHeight="638.0" prefWidth="446.0">
+         <children>
+            <Label alignment="CENTER" layoutX="16.0" layoutY="14.0" prefHeight="27.0" prefWidth="119.0" text="Top 5 Itemsbel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <PieChart fx:id="pieChart" layoutX="21.0" layoutY="41.0" prefHeight="366.0" prefWidth="399.0" />
+            <TableView fx:id="tblMostSellItems" layoutX="16.0" layoutY="467.0" opacity="0.75" prefHeight="150.0" prefWidth="410.0">
+               <columns>
+                  <TableColumn fx:id="colItemName" prefWidth="182.4000244140625" text="Item Name" />
+                  <TableColumn fx:id="colOrderCount" prefWidth="129.59991455078125" text="Order count" />
+                  <TableColumn fx:id="colQty" prefWidth="100.0" text="QTY" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="67.0" layoutY="180.0" prefHeight="200.0" prefWidth="463.0">
+         <children>
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="276.0">
+               <children>
+                  <TextField fx:id="txtOrderDate" layoutX="14.0" layoutY="13.0" onAction="#txtOrderDateOnAction" prefHeight="25.0" prefWidth="163.0" promptText="order date" />
+                  <Button layoutX="196.0" layoutY="13.0" mnemonicParsing="false" onAction="#btnSearchOrderDateOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-radius: 10;" text="Search">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" layoutX="31.0" layoutY="89.0" prefHeight="20.0" prefWidth="119.0" text="Order Count" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="170.0" layoutY="89.0" prefHeight="20.0" prefWidth="119.0" text="Item Qty" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblOrderCountlab" alignment="CENTER" layoutX="62.0" layoutY="140.0" prefHeight="18.0" prefWidth="46.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblItemQty" alignment="CENTER" layoutX="207.0" layoutY="140.0" prefHeight="18.0" prefWidth="45.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="112.0" fitWidth="94.0" layoutX="337.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="617.0" layoutY="33.0" prefHeight="140.0" prefWidth="446.0" style="-fx-background-color: E7E7E7FF; -fx-background-radius: 20;" styleClass="shadow1">
+         <children>
+            <Label layoutX="26.0" layoutY="30.0" text="Monthly Income">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtMonthlyProfit" layoutX="69.0" layoutY="76.0" prefHeight="34.0" prefWidth="163.0" text="0" textFill="#008fff">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="80.0" text="Rs.">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
