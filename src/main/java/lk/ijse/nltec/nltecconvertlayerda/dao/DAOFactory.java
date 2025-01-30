@@ -10,48 +10,48 @@ public class DAOFactory {
     public static DAOFactory getDAOFactory() {
         return daoFactory == null ? daoFactory = new DAOFactory() : daoFactory;
     }
-        public enum DAOTypes {
+
+    public enum DAOTypes {
             USERDAO,CUSTOMERDAO,EMPLOYEEDAO,ITEMDAO,ITEMSUPPLIERDAO,ORDERDAO,ORDERDETAILSDAO,TRANSPORTDAO,SUPPLIERDAO,REPAIRDAO,QUERY;
         }
 
-        public SuperDAO getDAO(DAOTypes daoTypes){
+    public SuperDAO getDAO(DAOTypes daoTypes) {
+        switch (daoTypes) {
+            case USERDAO:
+                return new UserDAOImpl();
 
-            switch (daoTypes){
-                case USERDAO:
-                    return new UserDAOImpl();
+            case ITEMDAO:
+                return new ItemDAOImpl();
 
-                case ITEMDAO:
-                    return  new ItemDAOImpl();
+            case EMPLOYEEDAO:
+                return new EmployeeDAOImpl();
 
-                case EMPLOYEEDAO:
-                    return new EmployeeDAOImpl();
+            case ORDERDAO:
+                return new OrderDAOImpl();
 
-                case ORDERDAO:
-                    return  new OrderDAOImpl();
+            case CUSTOMERDAO:
+                return new CustomerDAOImpl();
 
-                case CUSTOMERDAO:
-                    return  new CustomerDAOImpl();
+            case ORDERDETAILSDAO:
+                return new OrderDetailDAOImpl();
 
-                case ORDERDETAILSDAO:
-                    return new OrderDetailDAOImpl();
+            case ITEMSUPPLIERDAO:
+                return new ItemSupplierDAOImpl();
 
-                case ITEMSUPPLIERDAO:
-                    return new ItemSupplierDAOImpl();
+            case TRANSPORTDAO:
+                return new TransportDAOImpl();
 
-                case TRANSPORTDAO:
-                    return new TransportDAOImpl();
+            case SUPPLIERDAO:
+                return new SupplierDAOImpl();
 
-                case SUPPLIERDAO:
-                    return new SupplierDAOImpl();
+            case REPAIRDAO:
+                return new RepairDAOImpl();
 
-                case REPAIRDAO:
-                    return new RepairDAOImpl();
+            case QUERY:
+                return new QueryDAOImpl();
 
-                case QUERY:
-                    return new QueryDAOImpl();
-
-                default:
-                    return null;
-            }
+            default:
+                return null;
         }
+    }
 }

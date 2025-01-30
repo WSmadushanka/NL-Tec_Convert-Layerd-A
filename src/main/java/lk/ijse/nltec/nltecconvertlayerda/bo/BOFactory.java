@@ -9,10 +9,6 @@ public class BOFactory {
     private BOFactory() {
     }
 
-//    public static BOFactory getBOFactory() {
-//        return boFactory == null ? boFactory = new BOFactory() : boFactory;
-//    }
-
     public static BOFactory getBoFactory() {
         return boFactory == null ? boFactory =new BOFactory() : boFactory;
     }
