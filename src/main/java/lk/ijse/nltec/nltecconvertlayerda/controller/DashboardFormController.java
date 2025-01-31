@@ -77,7 +77,7 @@ public class DashboardFormController {
             barChart();
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        } */
+        }*/
 
         try {
             pieChartConnect();
