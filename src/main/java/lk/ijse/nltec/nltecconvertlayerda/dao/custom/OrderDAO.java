@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface OrderDAO extends CrudDAO<Order> {
     List<String> getAllDate()throws SQLException,ClassNotFoundException;
+
+    String getLastOrderId()throws SQLException,ClassNotFoundException;
 }

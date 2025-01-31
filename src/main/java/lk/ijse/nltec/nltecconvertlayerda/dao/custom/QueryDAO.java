@@ -16,4 +16,5 @@ public interface QueryDAO extends SuperDAO {
     double getLastMonthIncome()throws SQLException,ClassNotFoundException;
 
     ArrayList<Custom> getBarChart()throws SQLException,ClassNotFoundException;
+    double getNetTot(String oId)throws SQLException,ClassNotFoundException;
 }

@@ -8,4 +8,8 @@ import java.util.List;
 
 public interface SupplierDAO extends CrudDAO<Supplier> {
     List<String> getId()throws SQLException,ClassNotFoundException;
+
+    Supplier searchByName(String name)throws SQLException,ClassNotFoundException;
+
+    List<String> getName()throws SQLException,ClassNotFoundException;
 }
