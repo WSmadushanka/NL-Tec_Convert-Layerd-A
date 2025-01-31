@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="card_form" prefHeight="207.0" prefWidth="212.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.nltec.nltecconvertlayerda.controller.ItemCardController">
+<AnchorPane fx:id="card_form" onMousePressed="#click" prefHeight="207.0" prefWidth="212.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.nltec.nltecconvertlayerda.controller.ItemCardController">
    <children>
       <ImageView fx:id="itemImage" fitHeight="155.0" fitWidth="190.0" layoutX="22.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" />
       <Label fx:id="lblItemName" layoutX="11.0" layoutY="14.0" prefHeight="26.0" prefWidth="82.0" text="Keyboard">
