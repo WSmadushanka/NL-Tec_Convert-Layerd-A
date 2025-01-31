@@ -1,4 +1,9 @@
 package lk.ijse.nltec.nltecconvertlayerda.bo.custom;
 
-public interface QueryBO {
+import lk.ijse.nltec.nltecconvertlayerda.bo.SuperBo;
+
+import java.sql.SQLException;
+
+public interface QueryBO extends SuperBo {
+    double getNetTot(String oId) throws SQLException, ClassNotFoundException;
 }

@@ -1,5 +1,6 @@
 package lk.ijse.nltec.nltecconvertlayerda.bo.custom;
 
+import lk.ijse.nltec.nltecconvertlayerda.bo.SuperBo;
 import lk.ijse.nltec.nltecconvertlayerda.dto.ItemDTO;
 import lk.ijse.nltec.nltecconvertlayerda.dto.ItemSupplierDetailDTO;
 import lk.ijse.nltec.nltecconvertlayerda.dto.SupplierDTO;
@@ -9,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface PlaceItemBO {
+public interface PlaceItemBO extends SuperBo {
     boolean saveItemSupplierDetail(ItemSupplierDetailDTO is) throws SQLException, ClassNotFoundException;
 
     boolean updateItemSupplierDetail(ItemSupplierDetailDTO is) throws SQLException, ClassNotFoundException;
