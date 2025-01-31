@@ -27,7 +27,7 @@ public class RegistrationFormController {
     @FXML
     private TextField txtUserName;
 
-    UserBO userBO = (UserBO) BOFactory.getBOFactory().getBO(BOFactory.BOTypes.USERBO);
+    UserBO userBO = (UserBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.USERBO);
 
     @FXML
     void logInOnAction(ActionEvent event) throws IOException {
