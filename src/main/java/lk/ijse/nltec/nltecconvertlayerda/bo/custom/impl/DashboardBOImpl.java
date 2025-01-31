@@ -65,7 +65,7 @@ public class DashboardBOImpl implements DashboardBO {
     @Override
     public XYChart.Series getBarChart() throws SQLException, ClassNotFoundException {
         XYChart.Series series1 = new XYChart.Series();  // represent a series of data points on the chart.
-        series1.setName("Chama Computers");
+        series1.setName("NL-Technologies");
         List<Custom> dailyRevenueList = new ArrayList<>();/*DashboardRepo.getDateCount();*/
         try {
             List<Custom> customEntities = queryDAO.getBarChart();
