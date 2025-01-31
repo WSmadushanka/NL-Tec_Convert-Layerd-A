@@ -29,7 +29,7 @@ public class LoginFormController {
     @FXML
     private AnchorPane rootNode;
 
-    UserBO userBO = (UserBO) BOFactory.getBOFactory().getBO(BOFactory.BOTypes.USERBO);
+    UserBO userBO = (UserBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.USERBO);
 
     @FXML
     void btnLoginOnAction() {
