@@ -1,6 +1,7 @@
 package lk.ijse.nltec.nltecconvertlayerda.bo.custom;
 
 import javafx.scene.chart.XYChart;
+import lk.ijse.nltec.nltecconvertlayerda.bo.SuperBo;
 import lk.ijse.nltec.nltecconvertlayerda.dto.CustomDTO;
 import lk.ijse.nltec.nltecconvertlayerda.dto.CustomerDTO;
 import lk.ijse.nltec.nltecconvertlayerda.dto.ItemDTO;
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public interface DashboardBO {
+public interface DashboardBO extends SuperBo {
     List<CustomDTO> getMostSellItem()throws SQLException,ClassNotFoundException;
     ArrayList<CustomerDTO> getAllCustomers()throws SQLException,ClassNotFoundException;
     ArrayList<OrderDTO> getAllOrders()throws SQLException,ClassNotFoundException;

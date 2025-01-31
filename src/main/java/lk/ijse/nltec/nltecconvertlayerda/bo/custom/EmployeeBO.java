@@ -1,12 +1,13 @@
 package lk.ijse.nltec.nltecconvertlayerda.bo.custom;
 
+import lk.ijse.nltec.nltecconvertlayerda.bo.SuperBo;
 import lk.ijse.nltec.nltecconvertlayerda.dto.EmployeeDTO;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface EmployeeBO {
+public interface EmployeeBO extends SuperBo {
     ArrayList<EmployeeDTO> getAllEmployee()throws SQLException,ClassNotFoundException;
 
     boolean saveEmployee(EmployeeDTO employee)throws SQLException,ClassNotFoundException;
