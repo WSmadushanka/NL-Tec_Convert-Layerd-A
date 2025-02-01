@@ -43,7 +43,8 @@ public class LoginFormController {
                 new Alert(Alert.AlertType.INFORMATION, "The data you entered is incorrect").show();
             }
         } catch (Exception e) {
-            e.printStackTrace();        }
+            new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
+        }
     }
 
     private void checkCredential(String user_name, String pw) throws SQLException, ClassNotFoundException, IOException {
