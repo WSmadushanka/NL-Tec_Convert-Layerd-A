@@ -9,7 +9,7 @@ public class DbConnection {
     private Connection connection;
     private DbConnection() throws SQLException {
         connection = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/nl_technologies ",
+                "jdbc:mysql://localhost:3306/nl_Technologies_Layerd ",
                 "root",
                 "12345"
         );
