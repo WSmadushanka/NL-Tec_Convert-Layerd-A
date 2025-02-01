@@ -73,18 +73,18 @@ public class DashboardFormController {
         getOrderDate();
         setMonthlyProfit();
 
-        /*try {
-            barChart();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }*/
+//        try {
+//            barChart();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
 
         try {
             pieChartConnect();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 

@@ -28,8 +28,7 @@ public class SidepanelFormController {
         try {
             loadDashboardForm();
         } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+            e.printStackTrace();        }
     }
     private void setDate() {
         LocalDate nowDate = LocalDate.now();
