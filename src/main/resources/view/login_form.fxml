@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootNode" prefHeight="581.0" prefWidth="865.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.nltec.nltecconvertlayerda.controller.LoginFormController">
+<AnchorPane fx:id="rootNode" prefHeight="594.0" prefWidth="894.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.nltec.nltecconvertlayerda.controller.LoginFormController">
    <children>
-      <ImageView fitHeight="584.0" fitWidth="881.0" layoutX="2.0" layoutY="1.0" opacity="0.77" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="620.0" fitWidth="912.0" layoutX="-7.0" layoutY="-6.0" opacity="0.77" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/person-wearing-high-tech-ar-headset-surrounded-by-bright-blue-neon-colors.jpg" />
          </image>
@@ -23,7 +23,7 @@
             <Image url="@../image/Image_NL_logo-removebg-preview.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="149.0" fitWidth="222.0" layoutX="557.0" layoutY="9.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="149.0" fitWidth="222.0" layoutX="557.0" layoutY="2.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/images__1_-removebg-preview.png" />
          </image>
