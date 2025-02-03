@@ -118,7 +118,7 @@
             </Label>
             <ImageView fitHeight="112.0" fitWidth="94.0" layoutX="337.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="" />
+                  <Image url="@../image/icons8-customer-80.png" />
                </image>
             </ImageView>
          </children>

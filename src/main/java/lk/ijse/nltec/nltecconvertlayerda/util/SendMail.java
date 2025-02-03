@@ -12,14 +12,14 @@ public class SendMail {
         String body = "";
 
         if(num == 1){
-            subject = "CHAMA COMPUTERS \nYour QR Code - Bring this on your return.";
-            body = "Congratulations...! You are created account chama computers successfully.";
+            subject = "NL-Technologies \nYour QR Code - Bring this on your return.";
+            body = "Congratulations...! You are created account NL-Technologies successfully.";
         } else if (num == 2) {
-            subject = "CHAMA COMPUTERS \nYour Bill ";
+            subject = "NL-Technologies \nYour Bill ";
             body = "Thank You Chosen us... Bring this when making a warranty claim";
         } else if (num == 3) {
             subject = "CHAMA COMPUTERS \nYour QR Code.";
-            body = "Congratulations...! You have been hired by our company. Bring this QR to work Chama Computers.";
+            body = "Congratulations...! You have been hired by our company. Bring this QR to work NL-Technologies.";
         }
 
 
