@@ -56,7 +56,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <BarChart fx:id="barChart" layoutX="24.0" layoutY="391.0" opacity="0.85" prefHeight="426.0" prefWidth="500.0">
+      <BarChart fx:id="barChart" layoutX="24.0" layoutY="367.0" opacity="0.85" prefHeight="426.0" prefWidth="500.0">
          <xAxis>
             <CategoryAxis side="BOTTOM" />
          </xAxis>
@@ -64,15 +64,15 @@
             <NumberAxis side="LEFT" />
          </yAxis>
       </BarChart>
-      <AnchorPane layoutX="617.0" layoutY="182.0" prefHeight="638.0" prefWidth="446.0">
+      <AnchorPane layoutX="617.0" layoutY="157.0" prefHeight="594.0" prefWidth="446.0">
          <children>
-            <Label alignment="CENTER" layoutX="16.0" layoutY="14.0" prefHeight="27.0" prefWidth="119.0" text="Top 5 Itemsbel" textFill="WHITE">
+            <Label alignment="CENTER" layoutY="1.0" prefHeight="27.0" prefWidth="119.0" text="Top 5 Itemsbel" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <PieChart fx:id="pieChart" layoutX="21.0" layoutY="41.0" prefHeight="366.0" prefWidth="399.0" />
-            <TableView fx:id="tblMostSellItems" layoutX="16.0" layoutY="467.0" opacity="0.75" prefHeight="150.0" prefWidth="410.0">
+            <PieChart fx:id="pieChart" layoutX="21.0" layoutY="37.0" prefHeight="351.0" prefWidth="399.0" />
+            <TableView fx:id="tblMostSellItems" layoutX="15.0" layoutY="408.0" opacity="0.75" prefHeight="150.0" prefWidth="410.0">
                <columns>
                   <TableColumn fx:id="colItemName" prefWidth="182.4000244140625" text="Item Name" />
                   <TableColumn fx:id="colOrderCount" prefWidth="129.59991455078125" text="Order count" />
@@ -123,7 +123,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="617.0" layoutY="33.0" prefHeight="140.0" prefWidth="446.0" style="-fx-background-color: E7E7E7FF; -fx-background-radius: 20;" styleClass="shadow1">
+      <AnchorPane layoutX="617.0" layoutY="28.0" prefHeight="122.0" prefWidth="446.0" style="-fx-background-color: E7E7E7FF; -fx-background-radius: 20;" styleClass="shadow1">
          <children>
             <Label layoutX="26.0" layoutY="30.0" text="Monthly Income">
                <font>
