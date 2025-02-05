@@ -73,11 +73,7 @@ public class DashboardFormController {
         getOrderDate();
         setMonthlyProfit();
 
-//        try {
-//            barChart();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
+        barChart();
 
         try {
             pieChartConnect();
