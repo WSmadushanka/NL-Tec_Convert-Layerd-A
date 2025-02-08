@@ -81,7 +81,7 @@ public class Regex {
 
     public static boolean setTextColor(TextField location, javafx.scene.control.TextField textField){
         if (Regex.isTextFieldValid(location, textField.getText())){
-            textField.setStyle("-fx-border-color: #0081ff; -fx-text-fill: #05bef3;  -fx-border-radius: 5px; -fx-border-width:  2px 2px 2px 2px; -fx-background-radius: 5px;");
+            textField.setStyle("-fx-border-color: #000000; -fx-text-fill: #000000;  -fx-border-radius: 5px; -fx-border-width:  2px 2px 2px 2px; -fx-background-radius: 5px;");
 
             return true;
         }else {
