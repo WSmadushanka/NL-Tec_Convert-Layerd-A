@@ -73,7 +73,7 @@ public class DashboardFormController {
         getOrderDate();
         setMonthlyProfit();
 
-        barChart();
+        //barChart();
 
         try {
             pieChartConnect();
