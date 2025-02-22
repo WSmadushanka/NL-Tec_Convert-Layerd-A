@@ -101,8 +101,8 @@ public class ItemDAOImpl implements ItemDAO {
             String[] split = id.split("I");
             int idNum = Integer.parseInt(split[1]);
 
-            if(idNum >= 0){
-                return "I" + 00 + ++idNum;
+            if(idNum >= 1){
+                return "I" + 0 + 0 + ++idNum;
             }else if(idNum >= 9){
                 return "I" + 0 + ++idNum;
             } else if(idNum >= 99){
